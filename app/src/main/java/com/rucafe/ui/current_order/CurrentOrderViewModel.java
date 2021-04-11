@@ -1,16 +1,16 @@
-package com.rucafe.ui.slideshow;
+package com.rucafe.ui.current_order;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class CurrentOrderViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public CurrentOrderViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is a Current Order fragment!");
     }
 
     public LiveData<String> getText() {

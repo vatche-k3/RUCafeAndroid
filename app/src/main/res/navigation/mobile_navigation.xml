@@ -3,8 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
+    <fragment
+        android:id="@+id/nav_current_order"
+        android:name="com.rucafe.ui.order_donut.OrderingDonutFragment"
+        android:label="@string/menu_current_order" />
     <fragment
         android:id="@+id/nav_home"
         android:name="com.rucafe.ui.home.HomeFragment"
@@ -12,14 +16,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.rucafe.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_order_coffee"
+        android:name="com.rucafe.ui.order_coffee.OrderingCoffeeFragment"
+        android:label="@string/menu_order_coffee"
+        tools:layout="@layout/fragment_order_coffee" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.rucafe.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_order_donut"
+        android:name="com.rucafe.ui.order_donut.OrderingDonutFragment"
+        android:label="@string/menu_order_donut" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.rucafe.ui.gallery;
+package com.rucafe.ui.order_donut;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.rucafe.R;
 
-public class GalleryFragment extends Fragment {
+public class OrderingDonutFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private OrderingDonutViewModel orderingDonutViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        orderingDonutViewModel =
+                new ViewModelProvider(this).get(OrderingDonutViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_order_donut, container, false);
+        final TextView textView = root.findViewById(R.id.text_order_donut);
+        orderingDonutViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
