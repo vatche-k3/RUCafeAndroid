@@ -11,4 +11,13 @@
     <string name="menu_order_coffee">Order Coffee</string>
     <string name="menu_order_donut">Order Donut</string>
     <string name="menu_current_order">Current Order</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="cream">Cream</string>
+    <string name="milk">Milk</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="syrup">Syrup</string>
+    <string name="caramel">Caramel</string>
+    <string name="current_price">Current Price</string>
+    <string name="sizes">Sizes</string>
+
 </resources>

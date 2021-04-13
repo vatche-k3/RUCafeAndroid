@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="coffee_size_array">
+        <item>Short</item>
+        <item>Tall</item>
+        <item>Grande</item>
+        <item>Venti</item>
+    </string-array>
+
+</resources>
