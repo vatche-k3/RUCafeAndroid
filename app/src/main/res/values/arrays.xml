@@ -6,4 +6,12 @@
         <item>Venti</item>
     </string-array>
 
+    <string-array name="donut_flavor_array">
+        <item>Glaze</item>
+        <item>Chocolate Glaze</item>
+        <item>Chocolate Frosting</item>
+        <item>Pink Frosting</item>
+        <item>Maple</item>
+    </string-array>
+
 </resources>
