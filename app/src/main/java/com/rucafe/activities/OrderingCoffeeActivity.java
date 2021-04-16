@@ -1,4 +1,4 @@
-package com.rucafe.ui;
+package com.rucafe.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
