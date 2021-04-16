@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".activities.OrderingCoffeeActivity">
+    android:visibility="visible"
+    tools:context=".activities.OrderingCoffeeActivity"
+    tools:visibility="visible">
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar2"
@@ -30,4 +32,145 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar2"
         app:layout_constraintStart_toStartOf="@+id/bottomAppBar2" />
+
+    <CheckBox
+        android:id="@+id/caramelCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/primary"
+        android:text="@string/caramel"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milkCheckBox" />
+
+    <CheckBox
+        android:id="@+id/creamCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:buttonTint="@color/primary"
+        android:text="@string/cream"
+        android:textAlignment="center"
+        android:textColor="@color/third"
+        android:textColorHighlight="@color/third"
+        android:textDirection="rtl"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar2" />
+
+    <CheckBox
+        android:id="@+id/syrupCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/primary"
+        android:text="@string/syrup"
+        android:textColor="@color/third"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creamCheckBox" />
+
+    <CheckBox
+        android:id="@+id/milkCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/primary"
+        android:text="@string/milk"
+        android:textColor="@color/third"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/syrupCheckBox" />
+
+    <CheckBox
+        android:id="@+id/whippedCreamCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/primary"
+        android:text="@string/whipped_cream"
+        android:textColor="@color/third"
+        android:textColorHint="@color/third"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caramelCheckBox" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/addins"
+        android:textColor="@color/third"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar2" />
+
+    <Spinner
+        android:id="@+id/whipped_cream_quantity"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary"
+        android:forceDarkAllowed="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/whippedCreamCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/caramel_quantity" />
+
+    <Spinner
+        android:id="@+id/caramel_quantity"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/caramelCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/milk_quantity" />
+
+    <Spinner
+        android:id="@+id/milk_quantity"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/milkCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/syrup_quantity" />
+
+    <Spinner
+        android:id="@+id/syrup_quantity"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toEndOf="@+id/syrupCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/cream_quantity" />
+
+    <Spinner
+        android:id="@+id/cream_quantity"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/primary"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toEndOf="@+id/creamCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar2"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

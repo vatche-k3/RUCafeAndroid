@@ -17,14 +17,6 @@ public class Constants {
     public static final String ORDER_STRING_DELIMITER = " - ";
     public static final String ORDER_TOTAL_PRICE_PREFIX_STR = "Total Price = ";
 
-    // Window constants
-    public static final String MAIN_MENU_WINDOW_TITLE = "Main Menu";
-    public static final String CURRENT_ORDER_DETAILS_WINDOW_TITLE = "Current Order Details";
-    public static final String ORDERING_COFFEE_WINDOW_TITLE = "New Coffee Order";
-    public static final String ORDERING_DONUTS_WINDOW_TITLE = "New Donut Order";
-    public static final String ORDERS_PAGE_WINDOW_TITLE = "Past Orders";
-    public static final int WINDOW_WIDTH = 400;
-    public static final int WINDOW_HEIGHT = 500;
 
     // File chooser constant
     public static final String FILE_CHOOSER_EXPORT_TITLE = "Open Target File for Export";
@@ -46,7 +38,7 @@ public class Constants {
 
     // Coffee specific constants
     public static final int MAX_UNIQUE_ADDIN_COUNT = 5; // ex: maximum of 5 creams
-    public static final int COFFEE_ADDIN_SPINNER_MIN_VALUE = 1; // lowest integer value the addin spinners can go to
+    public static final Integer[] COFFEE_ADDIN_SPINNER_VALUES = new Integer[]{1,2,3,4,5,6,7,8,9};
     public static final double COFFEE_ADDIN_COST = 0.2;
     public static final double COFFEE_BASE_PRICE = 1.99;
     public static final double COFFEE_SIZE_SHORT_PRICE = COFFEE_BASE_PRICE;
