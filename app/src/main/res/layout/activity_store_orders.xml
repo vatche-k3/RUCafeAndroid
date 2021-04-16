@@ -32,4 +32,36 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar4"
         app:layout_constraintStart_toStartOf="@+id/bottomAppBar4" />
+
+    <ListView
+        android:id="@+id/store_orders_list_view"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save_export_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/save_export_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store_orders_list_view" />
+
+    <Button
+        android:id="@+id/cancel_store_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cancel_selected_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_export_order_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
