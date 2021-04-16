@@ -18,6 +18,7 @@ public class OrderingCoffeeFragment extends Fragment {
 
     private OrderingCoffeeViewModel orderingCoffeeViewModel;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         orderingCoffeeViewModel =
