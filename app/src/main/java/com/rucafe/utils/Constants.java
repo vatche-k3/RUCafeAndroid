@@ -7,10 +7,12 @@ package com.rucafe.utils;
  */
 public class Constants {
     public static final String CURRENCY_FORMAT_STRING = "$%,.2f";
+    public static final int FIRST_SPINNER_ITEM = 0;
     public static final char SPACE_CHARACTER = ' ';
     public static final char ENUM_SPACE_REPLACEMENT_CHARACTER = '_';
     public static final double SALES_TAX_RATE = 0.06625;
     public static final String FILE_OUTPUT_MENU_ITEM_PREFIX = "\t - ";
+    public static final Integer[] QUANTITY_SPINNER_VALUES = new Integer[]{1,2,3,4,5,6,7,8,9};
 
     // Order constants
     public static final String ORDER_TREE_ROOT_NODE_STRING= "Orders";
@@ -22,7 +24,7 @@ public class Constants {
     public static final String FILE_CHOOSER_EXPORT_TITLE = "Open Target File for Export";
 
     // Alert messages
-    public static final String SUCCESSFULLY_ADDED_ITEM_TO_ORDER_MSG = "Successfully added the item to the order.";
+    public static final String SUCCESSFULLY_ADDED_ITEM_TO_ORDER_MSG = "";
     public static final String SUCCESSFULLY_PLACED_ORDER_MSG = "Successfully added order to store orders.";
     public static final String CANCELLED_ORDER_MSG = "Successfully cancelled order.";
     public static final String NO_FILE_SELECTED_MSG = "No file selected. Please try again.";
