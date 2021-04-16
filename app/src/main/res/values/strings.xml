@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">RU Cafe</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
+    <string name="main_menu_title_string">Main Menu</string>
+    <string name="current_order_details_title">Current Order Details</string>
+    <string name="ordering_coffee_title">Order Coffee</string>
+    <string name="ordering_donut_title">Order Donuts</string>
+    <string name="orders_page_title">Store Orders</string>
     <string name="menu_home">Home</string>
     <string name="menu_order_coffee">Order Coffee</string>
     <string name="menu_order_donut">Order Donut</string>
