@@ -47,6 +47,10 @@ public class OrderingCoffeeActivity extends AppCompatActivity implements Adapter
     // Current coffee
     Coffee currentCoffee;
 
+    /**
+     * On create lifetime cycle for our Activity
+     * @param savedInstanceState The saved instance bundle
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +93,9 @@ public class OrderingCoffeeActivity extends AppCompatActivity implements Adapter
         whippedCreamQuantity.setEnabled(false);
     }
 
+    /**
+     * On Start lifetime cycle for our activity
+     */
     @Override
     protected void onStart() {
         super.onStart();
@@ -188,7 +195,7 @@ public class OrderingCoffeeActivity extends AppCompatActivity implements Adapter
             }
         });
 
-        // Coffee Size lisetener
+        // Coffee Size listener
         coffeeSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

@@ -37,6 +37,7 @@ public class Constants {
     public static final double DONUT_TYPE_CAKE_PRICE = 1.59;
     public static final double DONUT_TYPE_HOLE_PRICE = 0.33;
     public static final String DONUT_STRING_DELIMITER = ":";
+    public static final Integer[] DONUT_QUANTITY_SPINNER_VALUES = new Integer[]{1,2,3,4,5,6,7,8,9};
 
     // Coffee specific constants
     public static final int MAX_UNIQUE_ADDIN_COUNT = 5; // ex: maximum of 5 creams
