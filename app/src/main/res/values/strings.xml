@@ -36,4 +36,5 @@
     <string name="cancel_selected_order">Cancel Selected Order</string>
     <string name="donut_flavor">Donut flavor:</string>
     <string name="donut_type">Donut type:</string>
+    <string name="successfully_placed_order">Successfully added order to store orders.</string>
 </resources>

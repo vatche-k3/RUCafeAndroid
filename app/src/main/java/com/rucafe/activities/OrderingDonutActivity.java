@@ -134,6 +134,9 @@ public class OrderingDonutActivity extends AppCompatActivity {
         addCartToOrder.setOnClickListener(v -> {
             this.addCartToOrder();
         });
+
+        // render cart
+        this.renderCart();
     }
 
     /**
@@ -188,6 +191,7 @@ public class OrderingDonutActivity extends AppCompatActivity {
      */
     private void renderCart() {
         this.currentCart.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, this.donutsInCart));
+        this.addCartToOrder.setEnabled(!this.donutsInCart.isEmpty());
     }
 
     /**
