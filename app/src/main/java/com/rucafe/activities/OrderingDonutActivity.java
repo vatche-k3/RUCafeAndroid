@@ -3,7 +3,6 @@ package com.rucafe.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AbsListView;
@@ -23,9 +22,13 @@ import com.rucafe.utils.Constants;
 import com.rucafe.utils.DonutFlavor;
 import com.rucafe.utils.DonutType;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/**
+ * OrderingDonutActivity, where the process of ordering donuts takes place
+ *
+ * @author Reagan McFarland, Vatche Kafafian
+ */
 public class OrderingDonutActivity extends AppCompatActivity {
 
     // XML References
@@ -197,10 +200,9 @@ public class OrderingDonutActivity extends AppCompatActivity {
         }
 
         // Clear selection lists
-        final int FIRST_ITEM_IN_LIST = 0;
-        donutFlavorSpinner.setSelection(FIRST_ITEM_IN_LIST);
-        donutTypeSpinner.setSelection(FIRST_ITEM_IN_LIST);
-        donutQuantity.setSelection(FIRST_ITEM_IN_LIST);
+        donutFlavorSpinner.setSelection(Constants.FIRST_SPINNER_ITEM);
+        donutTypeSpinner.setSelection(Constants.FIRST_SPINNER_ITEM);
+        donutQuantity.setSelection(Constants.FIRST_SPINNER_ITEM);
 
         // Re-render cart and recompute price
         this.renderCart();
