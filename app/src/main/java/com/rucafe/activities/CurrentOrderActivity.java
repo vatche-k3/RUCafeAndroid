@@ -19,7 +19,11 @@ import com.rucafe.models.MenuItem;
 import com.rucafe.models.Order;
 import com.rucafe.utils.Constants;
 
-
+/**
+ * Current Order Activity. List the details of the current order, and lets you remove items from the order before placing.
+ *
+ * @author Reagan McFarland, Vatche Kafafian
+ */
 public class CurrentOrderActivity extends AppCompatActivity {
 
     //XML References
