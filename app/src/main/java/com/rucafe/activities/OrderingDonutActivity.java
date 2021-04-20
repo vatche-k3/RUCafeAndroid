@@ -179,7 +179,28 @@ public class OrderingDonutActivity extends AppCompatActivity {
                 this.currentlySelectedFlavor,
                 (int) this.donutQuantity.getSelectedItem()
         );
-        this.donutsInCart.add(newDonut);
+
+        // We need to defrag donuts that are of the same type and flavor
+        Donut matchingDonut = null;
+        for(Donut donut : this.donutsInCart) {
+            if(donut.equals(newDonut)) {
+                matchingDonut = donut;
+                break;
+            }
+        }
+
+        // If there is a matching donut, just update its quantity instead. Otherwise, add it to the cart
+        if(matchingDonut == null) {
+            this.donutsInCart.add(newDonut);
+        } else {
+            matchingDonut.updateQuantity(matchingDonut.getQuantity() + newDonut.getQuantity());
+        }
+
+        // Clear selection lists
+        final int FIRST_ITEM_IN_LIST = 0;
+        donutFlavorSpinner.setSelection(FIRST_ITEM_IN_LIST);
+        donutTypeSpinner.setSelection(FIRST_ITEM_IN_LIST);
+        donutQuantity.setSelection(FIRST_ITEM_IN_LIST);
 
         // Re-render cart and recompute price
         this.renderCart();
